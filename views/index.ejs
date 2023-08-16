@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+    </head>
+    <body>
+        <h2><%= title %></h2>
+        <p>Welcome to <%= title %></p>
+        <a href="/new">Add message</a>
+        <ul>
+            <% for(let i = 0; i < messages.length; i++){%>
+            <%Object.values(messages[i]).forEach((value) =>{%>
+            <li><%= value %></li>
+            <% }) %>
+
+            <hr />
+
+            <%} %>
+        </ul>
+    </body>
+</html>

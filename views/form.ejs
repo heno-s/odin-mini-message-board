@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>New</title>
+        <link rel="stylesheet" href="/stylesheets/form.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Create new Message</h1>
+            <form action="/new" method="POST">
+                <div class="form-field">
+                    <label for="author">Author:</label
+                    ><input type="text" id="author" name="author" />
+                </div>
+                <div class="form-field">
+                    <label for="message">Message:</label
+                    ><input type="text" id="message" name="message" />
+                </div>
+
+                <button>Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
